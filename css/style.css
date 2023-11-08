@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+/* Reset */
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;    
+}
+
+/* Root */
+:root {
+    font-size: 1rem;
+}
+/* Fin Root */
+
+body{
+    font-family: 'Poppins', sans-serif;    
+}
+
+h1{
+    background-color: #ead5f1;
+    text-align: center;
+    font-size: 3.125rem;
+    font-weight: bold;
+    width: 100%;
+    }
+
+/* Pseudoelementos */
+
+::selection{
+    background-color:#ead5f1;
+}
+
+/* Fin Pseudoelementos */
+
+/* Pie de pagina */
+
+.footer-container{
+    background-color: #debaeb90;
+    color: grey;
+    display: flex;
+    width: 100%;
+    height: 55px;
+    align-items: center;   
+    font-size: 1rem;
+    justify-content: space-between;   
+}
+
+.footer-container .suscribirse{
+    width: 55%;
+    display: flex;
+    margin-left: 16px;
+    position: relative;
+    top: 2px; 
+}
+
+.footer-container .suscribirse input{
+    font-size: small;
+    position: relative;
+    bottom: 1px;
+}
+
+.footer-container .desarrollado{
+    font-size: 1rem;
+    width: 30%;
+    display: flex;
+    justify-content:space-around;
+    position: relative;
+    top: 10px;
+}
+
+.footer-container input:focus{
+    background-color: whitesmoke;
+}
+
+/* Fin Pie de pagina */
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    color: #debaeb;
+    font-size: 2.375rem;
+    font-weight: bold;
+    text-align: center;
+}
+/* Barra de navegacion */
+nav.navegacion{
+    width: 100%;
+    height: 90px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.logo-container{
+    height: 90px;
+    width: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.navegacion-nav{
+    display: flex;
+    width: 30%;
+    list-style: none;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.navegacion-nav .nav-item{
+    padding: 10px;
+}
+
+.nav-item{
+    position: relative;
+    font-size: 1.2rem;
+    top: 10px;
+    right: 10px;    
+}
+
+.nav-item:hover{
+    border-bottom: 1px solid #debaeb;
+}
+
+.nav-item a{
+    color: #debaeb;
+}
+
+/* Menu mobile */
+
+#check-menu, .navegacion label{
+    display: none;    
+} 
+
+.navegacion label i{
+    font-size: 1.8rem;
+    color: #debaeb;
+}
+
+
+/* Fin Barra de navegacion */
+
+/* Presentacion */
+
+.presentacion{
+    height: 400px;
+    width: 80%;
+    display: flex;
+    align-items:center;
+    gap: 50px;
+    
+}
+
+.presentacion img{
+    position: relative;
+    top: 20px;
+    left: 130px; 
+}
+
+.presentacion p{
+    position: relative;
+    top: 30px;
+    left: 150px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Fin presentacion */
+
+/* Banner mis trabajos */
+.banner-container{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    top: 0;
+}
+
+.banner-container .banner{
+    width: 100%;
+    height: 100%;   
+    position: absolute;
+    object-fit: cover; 
+}
+
+.banner-container .capa a{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.095);
+    position: absolute;
+    top: 0;
+    mix-blend-mode: overlay;
+}
+
+.banner-container .banner-text{
+    color: white;
+    font-size: 2.25rem;
+    font-weight: bold;
+    position: absolute;
+    top: 42%;
+    left: 35%;
+    border-radius: 5px;
+    padding: 10px;    
+}
+
+.banner-container:hover{
+    opacity: .90;
+}
+
+/* Fin Banner mis trabajos */
+
+/* Boton arriba */
+
+.arriba{
+    border: solid 1px #debaeb;
+    width:fit-content;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px; 
+    position: relative;
+    left: 895px;
+    background-color: #ead5f1;
+}
+
+.arriba a{
+    font-weight: 600;
+    color:black;
+}
+
+.arriba a:hover{
+    color: white;  
+}
+
+.arriba:hover{
+    background-color:#debaeb;
+}
+
+/* Fin Boton arriba */
+
+/* Seguinos en nuestras redes */
+
+.redes{
+    text-align: center;
+    
+}
+
+.redes a{
+    color: black;
+    font-size: 3rem;
+    padding: 0 15px;
+    text-align: center;
+}
+
+/* Fin seguinos en nuestras redes */
+
+.contame{
+    border: #ead5f1 1px solid;
+    display: inline-block;
+    position: relative;
+    left: 877px;
+    padding: 10px;
+    background-color: #ead5f1;
+    border-radius: 10px;       
+}
+
+.contame a{
+    font-weight: 600;
+    color: black;
+}
+
+.contame a:hover{
+    color: white;  
+}
+
+.contame:hover{
+    background-color:#debaeb;
+}
+
+
+/* Boton tienda */
+
+.tienda{
+    position: fixed;
+    bottom: 35px;
+    left: 15px;
+   
+}
+
+.tienda a{
+    color: black;
+    font-size: 3rem;
+}
+
+/* Fin Boton tienda */
+
+/* Servicios */
+
+.servicios{
+    text-align: center;
+    margin: 25px;
+    margin-top: 50px;
+}
+
+.servicios li{
+    border-color: #debaeb;
+    font-weight: bold;
+}
+
+/* Fin servicios */
+
+.contactame{
+    width: 60%;
+    margin: 30px 0px 30px 0px;
+    position: relative;
+    left: 20%;
+
+}
+
+/* Formulario contacto y mapa */
+
+.contacto{
+    background-color: rgba(234, 213, 241, 0.509);
+    width: 1200px;
+    height: 600px;
+    padding: 1.5em;
+    margin: 15px auto 15px auto;
+}
+
+.contacto form input,
+.contacto form textarea {
+    width: 100%;
+    padding: 0.7em;
+    background-color: white;
+    margin: 5px 0 5px 0;
+}
+    
+.contacto form .boton {
+    width: 20%;
+    background-color: rgba(222, 186, 235, 0.388);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.contacto form .boton:hover,
+.contacto form .boton:focus {
+    background-color: rgba(222, 186, 235, 0.665);
+    color: white;   
+}
+
+.contacto form input:focus,
+.contacto form textarea:focus{
+    background-color: whitesmoke;
+}
+
+.contacto form label {
+    font-weight: 600;
+}
+
+.contacto form textarea{
+    resize: none;
+}
+
+.botones {
+    position: relative;
+    left: 30%;
+    top: 30px;
+}
+
+.mapa iframe{
+    position: relative;
+    left: 500px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    top: 30px;
+
+}
+
+/* Fin Formulario contacto y mapa */
+
+/* Página Empretips */
+
+.tips-container {
+    width: 100%;
+    display: grid;
+    row-gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    grid-template-rows: repeat(3,400px);
+    grid-template-columns: 1000px 900px;
+    grid-template-areas:
+    "tip1 imgtip1"
+    "tip2 imgtip2"
+    "tip3 imgtip3";
+}
+
+.tip1, .tip2, .tip3, .imgtip1, .imgtip2, .imgtip3 {
+    border: 1px solid;
+} 
+
+.tip1{
+    grid-area: tip1;
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin: 10px;
+    font-weight: bold;
+
+}
+
+.tip2{
+    grid-area: tip2;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.tip3{
+    grid-area: tip3;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.imgtip1{
+    grid-area: imgtip1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+
+}
+
+.imgtip2{
+    grid-area: imgtip2;
+}
+
+.imgtip3{
+    grid-area: imgtip3;
+}
+
+/* Fin Página Empretips */
+
+/* Página info */
+
+.info-container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 300px 400px 300px 400px 300px 400px;
+    justify-content: center;
+    row-gap: 5px;
+    font-size: 1rem;
+}
+
+.info1, .info2, .info3, .imginfo1, .imginfo2, .imginfo3 {
+    border: 1px solid;
+}
+
+.info1, .info2, .info3 {
+    text-align: center;
+    margin: 10px 15px 10px 15px;
+}
+
+
+/* Fin Página info */
+
+/* Página Galeria */
+
+.galeria-container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(4,500px);
+    row-gap: 10px;
+    margin-top: 10px;
+    
+}
+
+.galeria1, .galeria2, .galeria3, .galeria4 {
+    border: 1px solid;
+}
+
+.galeria1 img{
+    margin-left: 5px;
+    position: relative;
+    left: 15px;
+    top: 15px;
+}
+
+/* Fin Página Galeria */
+
+@media (max-width:1500px){
+    .arriba{
+        left: 655px;
+    }
+
+    .contame{
+        left: 626px;
+
+    }
+
+    .tips-container{
+        grid-template-rows: repeat(3,400px);
+        grid-template-columns: 750px 650px;
+    
+    }
+
+    .mapa{
+        position: relative;
+        left: -230px;
+    }
+
+  
+
+}
+
+
+
+
+@media (max-width:768px){
+    .navegacion label{
+        display: block;
+    }
+
+    .navegacion-nav{
+        display: none;
+    }
+
+    .navegacion #check-menu:checked ~ .navegacion-nav{
+        background-color: rgba(255, 255, 255, 0.95);
+        width: 30%;
+        height: 30vh;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: end;
+    }
+
+    .arriba{
+        left:330px;
+    }
+
+    .contame{
+        left: 308px;
+    }
+
+    .tips-container{
+        grid-template-rows: repeat(6,400px);
+        grid-template-columns: 750px;
+        grid-template-areas:
+        "tip1"
+        "imgtip1"
+        "tip2" 
+        "imgtip2"
+        "tip3" 
+        "imgtip3";
+    }
+
+    .footer-container .suscribirse{
+        display: none;
+    }
+
+    .footer-container .desarrollado{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }   
+}
+
+@media (max-width:570px){
+    .arriba{
+        left: 140px;
+    }
+
+    .contame{
+        left: 115px;
+    }
+    .tips-container{
+        grid-template-rows: repeat(6,400px);
+        grid-template-columns: 380px;
+        grid-template-areas:
+        "tip1"
+        "imgtip1"
+        "tip2" 
+        "imgtip2"
+        "tip3" 
+        "imgtip3";
+    }
+    
+    .footer-container .suscribirse{
+        display: none;
+    }
+
+    .footer-container .desarrollado{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }   
+
+}
