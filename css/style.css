@@ -402,7 +402,7 @@ nav.navegacion{
 }
 
 .tip1, .tip2, .tip3, .imgtip1, .imgtip2, .imgtip3 {
-    border: 1px solid;
+    /* border: 1px solid; */
 } 
 
 .tip1{
@@ -422,13 +422,25 @@ nav.navegacion{
     grid-area: tip2;
     text-align: center;
     font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin: 10px;
+    font-weight: bold;
 }
 
 .tip3{
     grid-area: tip3;
     text-align: center;
     font-size: 1rem;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin: 10px;
+    font-weight: bold;
+} 
 
 .imgtip1{
     grid-area: imgtip1;
@@ -442,10 +454,20 @@ nav.navegacion{
 
 .imgtip2{
     grid-area: imgtip2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10px;
 }
 
 .imgtip3{
     grid-area: imgtip3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10px;
 }
 
 /* Fin Página Empretips */
@@ -459,17 +481,61 @@ nav.navegacion{
     justify-content: center;
     row-gap: 5px;
     font-size: 1rem;
+    grid-template-areas: 
+    "info1"
+    "imginfo1"
+    "info2"
+    "imginfo2"
+    "info3"
+    "imginfo3";
 }
 
 .info1, .info2, .info3, .imginfo1, .imginfo2, .imginfo3 {
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
-.info1, .info2, .info3 {
+
+.info1, .info2, .info3{
     text-align: center;
     margin: 10px 15px 10px 15px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
 }
 
+.imginfo1, .imginfo2, .imginfo3{
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+}
+
+.info1{
+    grid-area: info1;
+}
+
+.info2{
+    grid-area: info2;
+}
+
+.info3{
+    grid-area: info3;
+}
+
+.imginfo1{
+    grid-area: imginfo1;
+}
+
+.imginfo2{
+    grid-area: imginfo2;
+}
+
+.imginfo3{
+    grid-area: imginfo3;
+    margin-bottom: 15px;
+}
 
 /* Fin Página info */
 
@@ -485,13 +551,34 @@ nav.navegacion{
 }
 
 .galeria1, .galeria2, .galeria3, .galeria4 {
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 .galeria1 img{
     margin-left: 5px;
     position: relative;
     left: 15px;
+    top: 15px;
+}
+
+.galeria2 img{
+    margin-left: 5px;
+    position: relative;
+    left: 350px;
+    top: 15px;
+}
+
+.galeria3 img{
+    margin-left: 5px;
+    position: relative;
+    left: 15px;
+    top: 15px;
+}
+
+.galeria4 img{
+    margin-left: 5px;
+    position: relative;
+    left: 280px;
     top: 15px;
 }
 
@@ -519,7 +606,6 @@ nav.navegacion{
     }
 
   
-
 }
 
 
@@ -575,7 +661,31 @@ nav.navegacion{
         width: 100%;
         display: flex;
         align-items: center;
-    }   
+    }
+    
+    .info1, .info2, .info3{
+        font-size: 1rem;
+    }
+    
+    .banner-container{
+        display: none;
+    }
+
+    .presentacion{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        position: relative;
+        right: 55px;
+
+    }
+
+    .presentacion p{
+        font-size: 0.8rem;
+    }
+
+
 }
 
 @media (max-width:570px){
@@ -597,6 +707,17 @@ nav.navegacion{
         "tip3" 
         "imgtip3";
     }
+
+    .tip1, .tip2, .tip3{
+        font-size: 0.7rem;
+    }
+
+    .imgtip1, .imgtip2, .imgtip3{
+        width: 70px;
+        position: relative;
+        left: 65px;    
+    }
+
     
     .footer-container .suscribirse{
         display: none;
@@ -606,6 +727,44 @@ nav.navegacion{
         width: 100%;
         display: flex;
         align-items: center;
-    }   
+    }
+    
+    .info-container{
+        display: grid;
+        grid-template-columns: 400px; 
+        grid-template-rows: 300px 340px 300px 340px 300px 340px;
+    }
+
+    .imginfo1, .imginfo2, .imginfo3{
+        gap: 1px;
+
+    }
+
+    .info1, .info2, .info3{
+        font-size: 0.7rem;
+    }
+
+    .banner-container{
+        display: none;
+    }
+
+    .presentacion{
+        position: relative;
+        right: 125px;
+        display: flex;
+        justify-items: center;
+        width: 90%;  
+    }
+
+    .presentacion img{
+        width: 100%;
+        position: relative;
+        left: 145px;
+    }
+
+    h1{
+        font-size: 2.7rem;
+    }
+
 
 }
