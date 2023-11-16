@@ -87,6 +87,13 @@ h2{
     text-align: center;
 }
 /* Barra de navegacion */
+
+.header{
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+
 nav.navegacion{
     width: 100%;
     height: 90px;
@@ -133,6 +140,7 @@ nav.navegacion{
 .nav-item a{
     color: #debaeb;
 }
+
 
 /* Menu mobile */
 
@@ -326,6 +334,12 @@ nav.navegacion{
 
 /* Formulario contacto y mapa */
 
+.contactame{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
 .contacto{
     background-color: rgba(234, 213, 241, 0.509);
     width: 1200px;
@@ -458,7 +472,7 @@ nav.navegacion{
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 10px;
+    top: 5px;
 }
 
 .imgtip3{
@@ -467,7 +481,7 @@ nav.navegacion{
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 10px;
+    top: 1px;
 }
 
 /* Fin Página Empretips */
@@ -547,7 +561,7 @@ nav.navegacion{
     grid-template-rows: repeat(4,500px);
     row-gap: 10px;
     margin-top: 10px;
-    
+    flex-wrap: wrap;  
 }
 
 .galeria1, .galeria2, .galeria3, .galeria4 {
@@ -584,6 +598,8 @@ nav.navegacion{
 
 /* Fin Página Galeria */
 
+/* Media queries Notebook */
+
 @media (max-width:1500px){
     .arriba{
         left: 655px;
@@ -605,11 +621,24 @@ nav.navegacion{
         left: -230px;
     }
 
+
+    .galeria1, .galeria2, .galeria3, .galeria4{
+        overflow-x: scroll;
+        display: flex;
+        align-items: center;        
+        margin-left: 10px;
+    }
+
+    .galeria2 img,
+    .galeria4 img {
+        left: 50px;
+    }
+
   
 }
 
 
-
+/* Media queries Tablet */
 
 @media (max-width:768px){
     .navegacion label{
@@ -653,6 +682,20 @@ nav.navegacion{
         "imgtip3";
     }
 
+    .imgtip1, .imgtip2, .imgtip3{
+        margin-bottom: 50px;
+    }
+
+    .imgtip2 img{
+        position: relative;
+        top: -25px;
+    }
+
+    .tip3{
+        position: relative;
+        top: -15px;
+    }
+
     .footer-container .suscribirse{
         display: none;
     }
@@ -685,8 +728,25 @@ nav.navegacion{
         font-size: 0.8rem;
     }
 
+    .galeria1, .galeria2, .galeria3, .galeria4{
+        display: grid;
+        grid-template-columns: repeat(3,250px);
+    }
+
+    .contacto{
+        width: 100%;
+    }
+
+    .mapa iframe{
+        width: 100%;
+        position: relative;
+        left: 230px;
+    }
+
 
 }
+
+/* Media queries Smartphones */
 
 @media (max-width:570px){
     .arriba{
@@ -710,12 +770,32 @@ nav.navegacion{
 
     .tip1, .tip2, .tip3{
         font-size: 0.7rem;
+        margin: 10px 0 10px 0;
+    }
+
+    .tip3{
+        position: relative;
+        top: -60px;
     }
 
     .imgtip1, .imgtip2, .imgtip3{
         width: 70px;
         position: relative;
-        left: 65px;    
+        left: 65px;
+        padding: 30px 0 40px 0;
+    }
+
+    .imgtip2 img{
+        position: relative;
+        top: -60px;
+        left: 90px;
+        width: 390px;
+        height: 300px;
+    }
+
+    .imgtip3 img{
+        position: relative;
+        left: 16px;
     }
 
     
@@ -766,5 +846,36 @@ nav.navegacion{
         font-size: 2.7rem;
     }
 
+    .galeria1, .galeria2, .galeria3, .galeria4{
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;              
+    }
 
+    .galeria1 img,
+    .galeria2 img,
+    .galeria3 img,
+    .galeria4 img{
+        position: relative;
+        left: -10px;
+        margin: 1px;
+    }
+
+    .galeria1 h2,
+    .galeria2 h2,
+    .galeria3 h2,
+    .galeria4 h2{
+        text-align: center;
+        position: relative;
+        left: -15px;
+    }
+
+    .contactame{
+        font-size: 1rem;
+    }
+
+    .botones{
+        font-size: 0.65rem;
+
+    }
 }
