@@ -233,8 +233,6 @@ nav.navegacion{
     margin-bottom: 5px;
     padding-left: 5px;
     padding-right: 5px; 
-    position: relative;
-    left: 895px;
     background-color: #ead5f1;
 }
 
@@ -273,14 +271,11 @@ nav.navegacion{
 .contame{
     border: #ead5f1 1px solid;
     display: inline-block;
-    position: relative;
-    left: 877px;
     padding: 10px;
     background-color: #ead5f1;
     border-radius: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
-    display: block;
 }
 
 .contame a{
@@ -650,14 +645,6 @@ nav.navegacion{
 /* Media queries Notebook */
 
 @media (max-width:1500px){
-    .arriba{
-        left: 655px;
-    }
-
-    .contame{
-        left: 626px;
- 
-    }
 
     .tips-container{
         grid-template-rows: repeat(3,400px);
@@ -709,14 +696,6 @@ nav.navegacion{
         flex-direction: column;
         justify-content:center;
         align-items: end;
-    }
-
-    .arriba{
-        left:330px;
-    }
-
-    .contame{
-        left: 308px;
     }
 
     .tips-container{
@@ -801,9 +780,7 @@ nav.navegacion{
 
 @media (max-width:570px){
 
-    .contame{
-        left: 170px;
-    }
+
     .tips-container{
         grid-template-rows: repeat(6,485px);
         grid-template-columns: 380px;
@@ -952,17 +929,4 @@ nav.navegacion{
 
     }
 
-    .arriba{
-        left: 195px;
-    }
-}
-
-@media (max-width:400px){
-    .arriba{
-        left: 140px;
-    }
-
-    .contame{
-        left: 115px;
-    }
 }
