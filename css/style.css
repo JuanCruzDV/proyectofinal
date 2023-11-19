@@ -269,6 +269,7 @@ nav.navegacion{
 
 /* Fin seguinos en nuestras redes */
 
+
 .contame{
     border: #ead5f1 1px solid;
     display: inline-block;
@@ -276,7 +277,10 @@ nav.navegacion{
     left: 877px;
     padding: 10px;
     background-color: #ead5f1;
-    border-radius: 10px;       
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
 }
 
 .contame a{
@@ -323,6 +327,51 @@ nav.navegacion{
 }
 
 /* Fin servicios */
+
+/* Sección comentarios de Emprendedores */
+
+.opiniones h2{
+    margin: 20px;
+}
+
+.opiniones .contenedor-opiniones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.caja-opinion{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 .8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.caja-opinion .comentario{
+    font-size: 1.0rem;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px;
+}
+
+.caja-opinion .usuario h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #ead5f180;
+}
+
+.caja-opinion .puntuacion i{
+    font-size: 1.5rem;
+}
+
+
+/* Fin Sección comentarios de Emprendedores */
+
 
 .contactame{
     width: 60%;
@@ -390,7 +439,7 @@ nav.navegacion{
 
 .mapa iframe{
     position: relative;
-    left: 500px;
+    left: 355px;
     margin-top: 50px;
     margin-bottom: 40px;
     top: 30px;
@@ -415,9 +464,6 @@ nav.navegacion{
     "tip3 imgtip3";
 }
 
-.tip1, .tip2, .tip3, .imgtip1, .imgtip2, .imgtip3 {
-    /* border: 1px solid; */
-} 
 
 .tip1{
     grid-area: tip1;
@@ -473,6 +519,16 @@ nav.navegacion{
     justify-content: center;
     position: relative;
     top: 5px;
+    
+}
+
+.imgtip2 p{
+    position: absolute;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+    
 }
 
 .imgtip3{
@@ -502,10 +558,6 @@ nav.navegacion{
     "imginfo2"
     "info3"
     "imginfo3";
-}
-
-.info1, .info2, .info3, .imginfo1, .imginfo2, .imginfo3 {
-    /* border: 1px solid; */
 }
 
 
@@ -564,9 +616,6 @@ nav.navegacion{
     flex-wrap: wrap;  
 }
 
-.galeria1, .galeria2, .galeria3, .galeria4 {
-    /* border: 1px solid; */
-}
 
 .galeria1 img{
     margin-left: 5px;
@@ -607,7 +656,7 @@ nav.navegacion{
 
     .contame{
         left: 626px;
-
+ 
     }
 
     .tips-container{
@@ -685,11 +734,13 @@ nav.navegacion{
     .imgtip1, .imgtip2, .imgtip3{
         margin-bottom: 50px;
     }
+    
 
     .imgtip2 img{
         position: relative;
         top: -25px;
     }
+
 
     .tip3{
         position: relative;
@@ -749,15 +800,12 @@ nav.navegacion{
 /* Media queries Smartphones */
 
 @media (max-width:570px){
-    .arriba{
-        left: 140px;
-    }
 
     .contame{
-        left: 115px;
+        left: 170px;
     }
     .tips-container{
-        grid-template-rows: repeat(6,400px);
+        grid-template-rows: repeat(6,485px);
         grid-template-columns: 380px;
         grid-template-areas:
         "tip1"
@@ -769,33 +817,58 @@ nav.navegacion{
     }
 
     .tip1, .tip2, .tip3{
-        font-size: 0.7rem;
-        margin: 10px 0 10px 0;
+        font-size: 0.9rem;
+        margin: 20px 0 20px 0;
+    }
+
+    .tip1{
+        position: relative;
+        top: 35px;
     }
 
     .tip3{
         position: relative;
-        top: -60px;
+        top: -180px;
     }
 
     .imgtip1, .imgtip2, .imgtip3{
-        width: 70px;
-        position: relative;
-        left: 65px;
+        width: 100%;
         padding: 30px 0 40px 0;
+    }
+
+    .imgtip1{
+        margin-top: 90px;
+        position: relative;
+        top: 15px;
+    }
+
+    .imgtip2{
+        margin-bottom:350px;
+        width: 550px;
+        position: relative;
+        right: 70px;
     }
 
     .imgtip2 img{
         position: relative;
-        top: -60px;
-        left: 90px;
-        width: 390px;
-        height: 300px;
+        top: 10px;
+        height: 310px;
+        width: 100%;
+        padding-top: 50px;
     }
+
+
+    .imgtip2 p{
+        font-size:2rem;
+        top: 5px;
+    }
+
+    
 
     .imgtip3 img{
         position: relative;
         left: 16px;
+        top: -50px;
     }
 
     
@@ -821,7 +894,7 @@ nav.navegacion{
     }
 
     .info1, .info2, .info3{
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
     .banner-container{
@@ -877,5 +950,19 @@ nav.navegacion{
     .botones{
         font-size: 0.65rem;
 
+    }
+
+    .arriba{
+        left: 195px;
+    }
+}
+
+@media (max-width:400px){
+    .arriba{
+        left: 140px;
+    }
+
+    .contame{
+        left: 115px;
     }
 }
