@@ -172,6 +172,7 @@ h2{
     width: $ancho;
     height: 50vh;
     top: 0;
+    transition: opacity .5s;
 
     &:hover{
         opacity: .90;
@@ -214,6 +215,7 @@ h2{
     padding-left: 5px;
     padding-right: 5px; 
     background-color: #ead5f1;
+    transition: background-color 0.5s;
 
     &:hover{
         background-color:#debaeb;
@@ -222,6 +224,7 @@ h2{
     a{
         font-weight: 600;
         color:black;
+        transition: color 0.5s;
 
         &:hover{
             color: white; 
@@ -240,7 +243,13 @@ h2{
         font-size: $tamanio*3;
         padding: 0 15px;
         text-align: center;
-    }    
+    
+    }
+    
+    i:hover{
+        transform: scale(1.15);
+
+    }
 }
 
 /* Fin seguinos en nuestras redes */
@@ -254,6 +263,7 @@ h2{
     border-radius: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
+    transition: background-color .5s;
 
     &:hover{
         background-color:#debaeb;
@@ -262,6 +272,7 @@ h2{
     a{
         font-weight: 600;
         color: black;
+        transition: color .5s;
 
         &:hover{
             color: white; 
@@ -276,6 +287,10 @@ h2{
     position: fixed;
     bottom: 35px;
     left: 15px;
+
+    &:hover{
+        transform: scale(1.15);
+    }
 
     a{
         color: black;
@@ -380,6 +395,7 @@ h2{
         background-color: rgba(222, 186, 235, 0.388);
         text-transform: uppercase;
         font-weight: 800;
+        transition: all .5s;
 
         &:hover,
         &:focus{

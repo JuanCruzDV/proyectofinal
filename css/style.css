@@ -162,6 +162,7 @@ h2 {
   width: 100%;
   height: 50vh;
   top: 0;
+  transition: opacity 0.5s;
 }
 .banner-container:hover {
   opacity: 0.9;
@@ -201,6 +202,7 @@ h2 {
   padding-left: 5px;
   padding-right: 5px;
   background-color: #ead5f1;
+  transition: background-color 0.5s;
 }
 .arriba:hover {
   background-color: #debaeb;
@@ -208,6 +210,7 @@ h2 {
 .arriba a {
   font-weight: 600;
   color: black;
+  transition: color 0.5s;
 }
 .arriba a:hover {
   color: white;
@@ -224,6 +227,9 @@ h2 {
   padding: 0 15px;
   text-align: center;
 }
+.redes i:hover {
+  transform: scale(1.15);
+}
 
 /* Fin seguinos en nuestras redes */
 /* Botón contame tu idea */
@@ -235,6 +241,7 @@ h2 {
   border-radius: 10px;
   margin-top: 15px;
   margin-bottom: 15px;
+  transition: background-color 0.5s;
 }
 .contame:hover {
   background-color: #debaeb;
@@ -242,6 +249,7 @@ h2 {
 .contame a {
   font-weight: 600;
   color: black;
+  transition: color 0.5s;
 }
 .contame a:hover {
   color: white;
@@ -253,6 +261,9 @@ h2 {
   position: fixed;
   bottom: 35px;
   left: 15px;
+}
+.tienda:hover {
+  transform: scale(1.15);
 }
 .tienda a {
   color: black;
@@ -344,6 +355,7 @@ h2 {
   background-color: rgba(222, 186, 235, 0.388);
   text-transform: uppercase;
   font-weight: 800;
+  transition: all 0.5s;
 }
 .contacto form .boton:hover, .contacto form .boton:focus {
   background-color: rgba(222, 186, 235, 0.665);
