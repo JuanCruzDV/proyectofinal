@@ -1,0 +1,615 @@
+@import './partials/fonts';
+@import './partials/variables';
+@import './partials/pseudoelementos';
+ 
+/* Reset */
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;    
+}
+
+/* Root */
+:root {
+    font-size: $tamanio;
+}
+/* Fin Root */
+
+body{
+    font-family: $fuente;    
+}
+
+h1{
+    background-color: #ead5f1;
+    text-align: center;
+    font-size: $tamanio*3.125;
+    font-weight: bold;
+    width: $ancho;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    color: #debaeb;
+    font-size: 2.375rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Pie de página */
+.footer-container{
+    background-color: #debaeb90;
+    color: grey;
+    display: flex;
+    width: 100%;
+    height: 55px;
+    align-items: center;   
+    font-size: 1rem;
+    justify-content: space-between;
+
+    .suscribirse{
+    width: 55%;
+    display: flex;
+    margin-left: 16px;
+    position: relative;
+    top: 2px;
+
+    input{
+        font-size: small;
+        position: relative;
+        bottom: 1px;
+        &:focus{
+            background-color: whitesmoke;
+        }
+    }
+    }
+
+.desarrollado{
+    font-size: 1rem;
+    width: 30%;
+    display: flex;
+    justify-content:space-around;
+    position: relative;
+    top: 10px;
+}    
+       
+}
+
+/* Fin Pie de página */
+
+/* Barra de navegacion */
+.header{
+    position: sticky;
+    z-index: 10;
+    top: 0;
+
+    nav.navegacion{
+        width: 100%;
+        height: 90px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+    .logo-container{
+        height: 90px;
+        width: 12%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .navegacion-nav{
+        display: flex;
+        width: 30%;
+        list-style: none;
+        align-items: center;
+        justify-content:space-around;
+
+        .nav-item{
+            padding: 10px;
+            position: relative;
+            font-size: 1.2rem;
+            top: 10px;
+            right: 10px;
+            
+            &:hover{
+                border-bottom: 1px solid #debaeb;
+            }
+
+            a{
+             color: #debaeb;
+            }
+        }
+    }
+}
+
+/* Menu mobile */
+
+#check-menu, .navegacion label{
+    display: none;    
+} 
+
+.navegacion label i{
+    font-size: 1.8rem;
+    color: #debaeb;
+}
+
+/* Fin Barra de navegacion */
+
+/* Presentacion */
+.presentacion{
+    height: 400px;
+    width: 80%;
+    display: flex;
+    align-items:center;
+    gap: 50px;
+
+    img{
+        position: relative;
+        top: 20px;
+        left: 130px; 
+    }
+
+    p{
+        position: relative;
+        top: 30px;
+        left: 150px;
+        font-size: 1rem;
+        font-weight: bold;
+    }    
+}
+
+/* Fin presentacion */
+
+/* Banner mis trabajos */
+.banner-container{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    top: 0;
+
+    &:hover{
+        opacity: .90;
+    }
+
+    .banner{
+        width: 100%;
+        height: 100%;   
+        position: absolute;
+        object-fit: cover; 
+    }
+
+    .capa a{
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.095);
+        position: absolute;
+        top: 0;
+        mix-blend-mode: overlay;
+    }
+
+    .banner-text{
+        color: white;
+        font-size: 2.25rem;
+        font-weight: bold;
+        position: absolute;
+        top: 42%;
+        left: 35%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+}
+
+/* Fin Banner mis trabajos */
+
+/* Boton arriba */
+.arriba{
+    border: solid 1px #debaeb;
+    width:fit-content;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px; 
+    background-color: #ead5f1;
+
+    &:hover{
+        background-color:#debaeb;
+    }
+
+    a{
+        font-weight: 600;
+        color:black;
+
+        &:hover{
+            color: white; 
+        }
+    }
+}
+
+/* Fin Boton arriba */
+
+/* Seguinos en nuestras redes */
+.redes{
+    text-align: center;
+
+    a{
+        color: black;
+        font-size: 3rem;
+        padding: 0 15px;
+        text-align: center;
+    }    
+}
+
+/* Fin seguinos en nuestras redes */
+
+/* Botón contame tu idea */
+.contame{
+    border: #ead5f1 1px solid;
+    display: inline-block;
+    padding: 10px;
+    background-color: #ead5f1;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    &:hover{
+        background-color:#debaeb;
+    }
+
+    a{
+        font-weight: 600;
+        color: black;
+
+        &:hover{
+            color: white; 
+        }
+    }
+}
+
+/* Fin Botón contame tu idea */
+
+/* Boton tienda */
+.tienda{
+    position: fixed;
+    bottom: 35px;
+    left: 15px;
+
+    a{
+        color: black;
+        font-size: 3rem;
+    }
+   
+}
+
+/* Fin Boton tienda */
+
+/* Servicios */
+.servicios{
+    text-align: center;
+    margin: 25px;
+    margin-top: 50px;
+
+    li{
+        border-color: #debaeb;
+        font-weight: bold;
+    }
+}
+
+/* Fin servicios */
+
+/* Sección comentarios de Emprendedores */
+.opiniones{
+    h2{
+        margin: 20px;
+    }
+
+    .contenedor-opiniones{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .caja-opinion{
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        width: 400px;
+        height: 200px;
+        text-align: center;
+        position: relative;
+        box-shadow: 0 .8px 16px rgba(0, 0, 0, 0.1);
+
+        .comentario{
+            font-size: 1.0rem;
+            font-weight: bold;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .usuario h3{
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #ead5f180;
+        }
+
+        .puntuacion i{
+            font-size: 1.5rem;
+        }
+    }
+
+}
+
+/* Fin Sección comentarios de Emprendedores */
+
+/* Página contacto */
+.contactame{
+    width: 60%;
+    margin: 30px 0px 30px 0px;
+    position: relative;
+    left: 20%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Formulario contacto y mapa */
+.contacto{
+    background-color: rgba(234, 213, 241, 0.509);
+    width: 1200px;
+    height: 600px;
+    padding: 1.5em;
+    margin: 15px auto 15px auto;
+
+    form input,
+    form textarea{
+        width: 100%;
+        padding: 0.7em;
+        background-color: white;
+        margin: 5px 0 5px 0;
+
+        &:focus,
+        &:hover{
+            background-color: whitesmoke;
+        }
+    }
+
+    form .boton{
+        width: 20%;
+        background-color: rgba(222, 186, 235, 0.388);
+        text-transform: uppercase;
+        font-weight: 800;
+
+        &:hover,
+        &:focus{
+            background-color: rgba(222, 186, 235, 0.665);
+            color: white;   
+        }
+
+    }
+
+    form label{
+        font-weight: 600;
+    }
+
+    form textarea{
+        resize: none;
+    }
+
+    .botones {
+        position: relative;
+        left: 30%;
+        top: 30px;
+    }
+
+}
+
+.mapa iframe{
+    position: relative;
+    left: 355px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    top: 30px;
+}
+
+/* Fin Página contacto */
+
+/* Página Empretips */
+.tips-container {
+    width: 100%;
+    display: grid;
+    row-gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    grid-template-rows: repeat(3,400px);
+    grid-template-columns: 1000px 900px;
+    grid-template-areas:
+    "tip1 imgtip1"
+    "tip2 imgtip2"
+    "tip3 imgtip3";
+
+    .tip1{
+        grid-area: tip1;
+        text-align: center;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        margin: 10px;
+        font-weight: bold;
+    }
+
+    .tip2{
+        grid-area: tip2;
+        text-align: center;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        margin: 10px;
+        font-weight: bold;
+    }
+
+    .tip3{
+        grid-area: tip3;
+        text-align: center;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        margin: 10px;
+        font-weight: bold;
+    } 
+
+    .imgtip1{
+        grid-area: imgtip1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 10px;
+    }
+
+    .imgtip2{
+        grid-area: imgtip2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 5px;
+
+        p{
+            position: absolute;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            width: 50%;
+        }    
+    }
+
+    .imgtip3{
+        grid-area: imgtip3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 1px;
+    }
+}
+
+/* Fin Página Empretips */
+
+/* Página info */
+.info-container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 300px 400px 300px 400px 300px 400px;
+    justify-content: center;
+    row-gap: 5px;
+    font-size: 1rem;
+    grid-template-areas: 
+    "info1"
+    "imginfo1"
+    "info2"
+    "imginfo2"
+    "info3"
+    "imginfo3";
+
+    .info1, .info2, .info3{
+        text-align: center;
+        margin: 10px 15px 10px 15px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .imginfo1, .imginfo2, .imginfo3{
+        display: flex;
+        justify-content: center;
+        gap: 120px;
+    }
+
+    .info1{
+        grid-area: info1;
+    }
+    
+    .info2{
+        grid-area: info2;
+    }
+    
+    .info3{
+        grid-area: info3;
+    }
+    
+    .imginfo1{
+        grid-area: imginfo1;
+    }
+    
+    .imginfo2{
+        grid-area: imginfo2;
+    }
+    
+    .imginfo3{
+        grid-area: imginfo3;
+        margin-bottom: 15px;
+    }
+    
+}
+
+/* Fin Página info */
+
+/* Página Galeria */
+.galeria-container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(4,500px);
+    row-gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    
+    .galeria1 img{
+        margin-left: 5px;
+        position: relative;
+        left: 15px;
+        top: 15px;
+    }
+
+    .galeria2 img{
+        margin-left: 5px;
+        position: relative;
+        left: 350px;
+        top: 15px;
+    }
+    
+    .galeria3 img{
+        margin-left: 5px;
+        position: relative;
+        left: 15px;
+        top: 15px;
+    }
+    
+    .galeria4 img{
+        margin-left: 5px;
+        position: relative;
+        left: 280px;
+        top: 15px;
+    }
+}
+
+/* Fin Página Galeria */
+
+
+@import './partials/queries'
