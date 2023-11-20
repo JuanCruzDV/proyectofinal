@@ -1,7 +1,9 @@
 @import './partials/fonts';
 @import './partials/variables';
 @import './partials/pseudoelementos';
- 
+@import './partials/condicionales';
+@import './partials/mixins';
+
 /* Reset */
 *{
     margin: 0; 
@@ -44,11 +46,10 @@ h2{
     background-color: #debaeb90;
     color: grey;
     display: flex;
-    width: $ancho;
-    height: 55px;
     align-items: center;   
     font-size: $tamanio;
     justify-content: space-between;
+    @include tamanio ($ancho,55px);
 
     .suscribirse{
     width: 55%;
@@ -87,8 +88,6 @@ h2{
     top: 0;
 
     nav.navegacion{
-        width: $ancho;
-        height: 90px;
         position: sticky;
         top: 0;
         z-index: 10;
@@ -97,13 +96,13 @@ h2{
         align-items: center;
         justify-content: space-between;
         padding: 0 1rem;
+        @include tamanio ($ancho,90px);
     }
     .logo-container{
-        height: 90px;
-        width: 12%;
         display: flex;
         align-items: center;
         justify-content: start;
+        @include tamanio (12%,90px);
     }
     .navegacion-nav{
         display: flex;
@@ -145,11 +144,10 @@ h2{
 
 /* Presentacion */
 .presentacion{
-    height: 400px;
-    width: 80%;
     display: flex;
     align-items:center;
     gap: 50px;
+    @include tamanio (80%,400px);
 
     img{
         position: relative;
@@ -179,20 +177,18 @@ h2{
         opacity: .90;
     }
 
-    .banner{
-        width: $ancho;
-        height: $alto;   
+    .banner{ 
         position: absolute;
         object-fit: cover; 
+        @include tamanio ($ancho,$alto);
     }
 
     .capa a{
-        height: $alto;
-        width: $ancho;
         background-color: rgba(0, 0, 0, 0.095);
         position: absolute;
         top: 0;
         mix-blend-mode: overlay;
+        @include tamanio ($ancho,$alto);
     }
 
     .banner-text{
@@ -320,11 +316,10 @@ h2{
 
     .caja-opinion{
         border: 1px solid rgba(0, 0, 0, 0.2);
-        width: 400px;
-        height: 200px;
         text-align: center;
         position: relative;
         box-shadow: 0 .8px 16px rgba(0, 0, 0, 0.1);
+        @include tamanio (400px,200px);
 
         .comentario{
             font-size: $tamanio;
@@ -363,10 +358,9 @@ h2{
 /* Formulario contacto y mapa */
 .contacto{
     background-color: rgba(234, 213, 241, 0.509);
-    width: 1200px;
-    height: 600px;
     padding: 1.5em;
     margin: 15px auto 15px auto;
+    @include tamanio (1200px,600px);
 
     form input,
     form textarea{
