@@ -34,7 +34,7 @@ a{
 
 h2{
     color: #debaeb;
-    font-size: 2.375rem;
+    font-size: $tamanio*2.375;
     font-weight: bold;
     text-align: center;
 }
@@ -44,10 +44,10 @@ h2{
     background-color: #debaeb90;
     color: grey;
     display: flex;
-    width: 100%;
+    width: $ancho;
     height: 55px;
     align-items: center;   
-    font-size: 1rem;
+    font-size: $tamanio;
     justify-content: space-between;
 
     .suscribirse{
@@ -68,7 +68,7 @@ h2{
     }
 
 .desarrollado{
-    font-size: 1rem;
+    font-size: $tamanio;
     width: 30%;
     display: flex;
     justify-content:space-around;
@@ -87,7 +87,7 @@ h2{
     top: 0;
 
     nav.navegacion{
-        width: 100%;
+        width: $ancho;
         height: 90px;
         position: sticky;
         top: 0;
@@ -115,7 +115,7 @@ h2{
         .nav-item{
             padding: 10px;
             position: relative;
-            font-size: 1.2rem;
+            font-size: $tamanio*1.2;
             top: 10px;
             right: 10px;
             
@@ -137,7 +137,7 @@ h2{
 } 
 
 .navegacion label i{
-    font-size: 1.8rem;
+    font-size: $tamanio*1.8;
     color: #debaeb;
 }
 
@@ -161,7 +161,7 @@ h2{
         position: relative;
         top: 30px;
         left: 150px;
-        font-size: 1rem;
+        font-size: $tamanio;
         font-weight: bold;
     }    
 }
@@ -171,7 +171,7 @@ h2{
 /* Banner mis trabajos */
 .banner-container{
     position: relative;
-    width: 100%;
+    width: $ancho;
     height: 50vh;
     top: 0;
 
@@ -180,15 +180,15 @@ h2{
     }
 
     .banner{
-        width: 100%;
-        height: 100%;   
+        width: $ancho;
+        height: $alto;   
         position: absolute;
         object-fit: cover; 
     }
 
     .capa a{
-        height: 100%;
-        width: 100%;
+        height: $alto;
+        width: $ancho;
         background-color: rgba(0, 0, 0, 0.095);
         position: absolute;
         top: 0;
@@ -197,7 +197,7 @@ h2{
 
     .banner-text{
         color: white;
-        font-size: 2.25rem;
+        font-size: $tamanio*2.25;
         font-weight: bold;
         position: absolute;
         top: 42%;
@@ -241,7 +241,7 @@ h2{
 
     a{
         color: black;
-        font-size: 3rem;
+        font-size: $tamanio*3;
         padding: 0 15px;
         text-align: center;
     }    
@@ -283,7 +283,7 @@ h2{
 
     a{
         color: black;
-        font-size: 3rem;
+        font-size: $tamanio*3;
     }
    
 }
@@ -327,21 +327,21 @@ h2{
         box-shadow: 0 .8px 16px rgba(0, 0, 0, 0.1);
 
         .comentario{
-            font-size: 1.0rem;
+            font-size: $tamanio;
             font-weight: bold;
             padding: 10px;
             margin: 5px;
         }
 
         .usuario h3{
-            font-size: 1.2rem;
+            font-size: $tamanio*1.2;
             font-weight: bold;
             padding: 10px;
             background-color: #ead5f180;
         }
 
         .puntuacion i{
-            font-size: 1.5rem;
+            font-size: $tamanio*1.5;
         }
     }
 
@@ -355,7 +355,7 @@ h2{
     margin: 30px 0px 30px 0px;
     position: relative;
     left: 20%;
-    font-size: 1.2rem;
+    font-size: $tamanio*1.2;
     font-weight: bold;
     text-align: center;
 }
@@ -370,7 +370,7 @@ h2{
 
     form input,
     form textarea{
-        width: 100%;
+        width: $ancho;
         padding: 0.7em;
         background-color: white;
         margin: 5px 0 5px 0;
@@ -423,7 +423,7 @@ h2{
 
 /* Página Empretips */
 .tips-container {
-    width: 100%;
+    width: $ancho;
     display: grid;
     row-gap: 10px;
     margin-top: 10px;
@@ -438,7 +438,7 @@ h2{
     .tip1{
         grid-area: tip1;
         text-align: center;
-        font-size: 1rem;
+        font-size: $tamanio;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -450,7 +450,7 @@ h2{
     .tip2{
         grid-area: tip2;
         text-align: center;
-        font-size: 1rem;
+        font-size: $tamanio;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -462,7 +462,7 @@ h2{
     .tip3{
         grid-area: tip3;
         text-align: center;
-        font-size: 1rem;
+        font-size: $tamanio;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -490,10 +490,10 @@ h2{
 
         p{
             position: absolute;
-            font-size: 2.5rem;
+            font-size: $tamanio*2.5;
             font-weight: bold;
             text-align: center;
-            width: 50%;
+            width: $ancho/2;
         }    
     }
 
@@ -511,12 +511,12 @@ h2{
 
 /* Página info */
 .info-container {
-    width: 100%;
+    width: $ancho;
     display: grid;
     grid-template-rows: 300px 400px 300px 400px 300px 400px;
     justify-content: center;
     row-gap: 5px;
-    font-size: 1rem;
+    font-size: $tamanio;
     grid-template-areas: 
     "info1"
     "imginfo1"
@@ -529,7 +529,7 @@ h2{
         text-align: center;
         margin: 10px 15px 10px 15px;
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: $tamanio*1.5;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -573,7 +573,7 @@ h2{
 
 /* Página Galeria */
 .galeria-container {
-    width: 100%;
+    width: $ancho;
     display: grid;
     grid-template-rows: repeat(4,500px);
     row-gap: 10px;

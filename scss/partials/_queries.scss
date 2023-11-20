@@ -10,19 +10,22 @@
 
     .mapa{
         position: relative;
-        left: -230px;
+        left: -240px;
     }
 
 
-    .galeria1, .galeria2, .galeria3, .galeria4{
+    .galeria-container .galeria1,
+    .galeria-container .galeria2,
+    .galeria-container .galeria3,
+    .galeria-container .galeria4{
         overflow-x: scroll;
         display: flex;
         align-items: center;        
         margin-left: 10px;
     }
 
-    .galeria2 img,
-    .galeria4 img {
+    .galeria-container .galeria2 img,
+    .galeria-container .galeria4 img {
         left: 50px;
     }  
 }
@@ -30,7 +33,7 @@
 
 /* Media queries Tablet */
 
-@media (max-width:768px){
+@media (max-width:810px){
     .navegacion label{
         display: block;
     }
@@ -64,18 +67,20 @@
         "imgtip3";
     }
 
-    .imgtip1, .imgtip2, .imgtip3{
+    .tips-container .imgtip1, 
+    .tips-container .imgtip2, 
+    .tips-container .imgtip3{
         margin-bottom: 50px;
     }
     
 
-    .imgtip2 img{
+    .tips-container .imgtip2 img{
         position: relative;
         top: -25px;
     }
 
 
-    .tip3{
+    .tips-container .tip3{
         position: relative;
         top: -15px;
     }
@@ -90,7 +95,9 @@
         align-items: center;
     }
     
-    .info1, .info2, .info3{
+    .info-container .info1,
+    .info-container .info2,
+    .info-container .info3{
         font-size: 1rem;
     }
     
@@ -112,7 +119,10 @@
         font-size: 0.8rem;
     }
 
-    .galeria1, .galeria2, .galeria3, .galeria4{
+    .galeria-container .galeria1,
+    .galeria-container .galeria2,
+    .galeria-container .galeria3,
+    .galeria-container .galeria4{
         display: grid;
         grid-template-columns: repeat(3,250px);
     }
@@ -124,7 +134,7 @@
     .mapa iframe{
         width: 100%;
         position: relative;
-        left: 230px;
+        left: 240px;
     }
 
 
@@ -147,40 +157,44 @@
         "imgtip3";
     }
 
-    .tip1, .tip2, .tip3{
+    .tips-container .tip1,
+    .tips-container .tip2,
+    .tips-container .tip3{
         font-size: 0.9rem;
         margin: 20px 0 20px 0;
     }
 
-    .tip1{
+    .tips-container .tip1{
         position: relative;
         top: 35px;
     }
 
-    .tip3{
+    .tips-container .tip3{
         position: relative;
         top: -180px;
     }
 
-    .imgtip1, .imgtip2, .imgtip3{
+    .tips-container .imgtip1,
+    .tips-container .imgtip2,
+    .tips-container .imgtip3{
         width: 100%;
         padding: 30px 0 40px 0;
     }
 
-    .imgtip1{
+    .tips-container .imgtip1{
         margin-top: 90px;
         position: relative;
         top: 15px;
     }
 
-    .imgtip2{
+    .tips-container .imgtip2{
         margin-bottom:350px;
         width: 550px;
         position: relative;
         right: 70px;
     }
 
-    .imgtip2 img{
+    .tips-container .imgtip2 img{
         position: relative;
         top: 10px;
         height: 310px;
@@ -189,14 +203,14 @@
     }
 
 
-    .imgtip2 p{
+    .tips-container .imgtip2 p{
         font-size:2rem;
         top: 5px;
     }
 
     
 
-    .imgtip3 img{
+    .tips-container .imgtip3 img{
         position: relative;
         left: 16px;
         top: -50px;
@@ -219,12 +233,16 @@
         grid-template-rows: 300px 340px 300px 340px 300px 340px;
     }
 
-    .imginfo1, .imginfo2, .imginfo3{
+    .info-container .imginfo1,
+    .info-container .imginfo2,
+    .info-container .imginfo3{
         gap: 1px;
 
     }
 
-    .info1, .info2, .info3{
+    .info-container .info1, 
+    .info-container .info2, 
+    .info-container .info3{
         font-size: 0.9rem;
     }
 
@@ -250,25 +268,28 @@
         font-size: 2.7rem;
     }
 
-    .galeria1, .galeria2, .galeria3, .galeria4{
+    .galeria-container .galeria1,
+    .galeria-container .galeria2,
+    .galeria-container .galeria3,
+    .galeria-container .galeria4{
         display: inline-flex;
         flex-direction: column;
         width: 100%;              
     }
 
-    .galeria1 img,
-    .galeria2 img,
-    .galeria3 img,
-    .galeria4 img{
+    .galeria-container .galeria1 img,
+    .galeria-container .galeria2 img,
+    .galeria-container .galeria3 img,
+    .galeria-container .galeria4 img{
         position: relative;
         left: -10px;
         margin: 1px;
     }
 
-    .galeria1 h2,
-    .galeria2 h2,
-    .galeria3 h2,
-    .galeria4 h2{
+    .galeria-container .galeria1 h2,
+    .galeria-container .galeria2 h2,
+    .galeria-container .galeria3 h2,
+    .galeria-container .galeria4 h2{
         text-align: center;
         position: relative;
         left: -15px;
