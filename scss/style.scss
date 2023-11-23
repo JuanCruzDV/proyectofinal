@@ -1,7 +1,6 @@
 @import './partials/fonts';
 @import './partials/variables';
 @import './partials/pseudoelementos';
-@import './partials/condicionales';
 @import './partials/mixins';
 
 /* Reset */
@@ -173,6 +172,7 @@ h2{
     height: 50vh;
     top: 0;
     transition: opacity .5s;
+    
 
     &:hover{
         opacity: .90;
@@ -181,7 +181,7 @@ h2{
     .banner{ 
         position: absolute;
         object-fit: cover; 
-        @include tamanio ($ancho,$alto);
+        @include tamanio ($ancho,$alto);    
     }
 
     .capa a{
