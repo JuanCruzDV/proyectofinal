@@ -616,7 +616,7 @@ h2 {
   .navegacion #check-menu:checked ~ .navegacion-nav {
     background-color: rgba(255, 255, 255, 0.95);
     width: 30%;
-    height: 30vh;
+    height: 35vh;
     position: absolute;
     right: 0;
     top: 60px;
@@ -678,12 +678,15 @@ h2 {
     grid-template-columns: repeat(3, 250px);
   }
   .contacto {
-    width: 100%;
+    width: 800px;
   }
   .mapa iframe {
-    width: 100%;
+    width: 790px;
     position: relative;
-    left: 240px;
+    left: 250px;
+  }
+  body {
+    overflow-x: hidden;
   }
 }
 /* Media queries Smartphones */
@@ -696,16 +699,16 @@ h2 {
   .tips-container .tip1,
   .tips-container .tip2,
   .tips-container .tip3 {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     margin: 20px 0 20px 0;
   }
   .tips-container .tip1 {
     position: relative;
-    top: 35px;
+    top: 65px;
   }
   .tips-container .tip3 {
     position: relative;
-    top: -180px;
+    top: -120px;
   }
   .tips-container .imgtip1,
   .tips-container .imgtip2,
@@ -717,19 +720,25 @@ h2 {
     margin-top: 90px;
     position: relative;
     top: 15px;
+    left: 30px;
+  }
+  .tips-container .imgtip1 img {
+    width: 400px;
+    position: relative;
+    right: 30px;
   }
   .tips-container .imgtip2 {
     margin-bottom: 350px;
-    width: 550px;
     position: relative;
-    right: 70px;
+    width: 445px;
+    right: 33px;
   }
   .tips-container .imgtip2 img {
     position: relative;
     top: 10px;
     height: 310px;
-    width: 100%;
     padding-top: 50px;
+    width: 400px;
   }
   .tips-container .imgtip2 p {
     font-size: 2rem;
@@ -737,8 +746,8 @@ h2 {
   }
   .tips-container .imgtip3 img {
     position: relative;
-    left: 16px;
     top: -50px;
+    width: 400px;
   }
   .footer-container .suscribirse {
     display: none;
@@ -779,7 +788,10 @@ h2 {
     left: 145px;
   }
   h1 {
-    font-size: 2.7rem;
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
   }
   .galeria-container .galeria1,
   .galeria-container .galeria2,
@@ -810,6 +822,18 @@ h2 {
   }
   .botones {
     font-size: 0.65rem;
+  }
+  .mapa iframe {
+    width: 420px;
+    height: 300px;
+    position: relative;
+    left: 247px;
+  }
+  .contacto {
+    width: 400px;
+  }
+  body {
+    overflow-x: hidden;
   }
 }
 
