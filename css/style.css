@@ -824,16 +824,22 @@ h2 {
     font-size: 0.65rem;
   }
   .mapa iframe {
-    width: 420px;
+    width: 500px;
     height: 300px;
     position: relative;
-    left: 247px;
+    left: 273px;
   }
   .contacto {
     width: 400px;
   }
   body {
     overflow-x: hidden;
+  }
+}
+@media (max-width: 480px) {
+  .mapa iframe {
+    width: 430px;
+    left: 265px;
   }
 }
 
