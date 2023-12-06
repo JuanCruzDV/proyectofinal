@@ -1,0 +1,74 @@
+/* Boton arriba */
+.arriba{
+    border: solid 1px #debaeb;
+    width:fit-content;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px; 
+    background-color: #ead5f1;
+    transition: background-color 0.5s;
+
+    &:hover{
+        background-color:#debaeb;
+    }
+
+    a{
+        font-weight: 600;
+        color:black;
+        transition: color 0.5s;
+
+        &:hover{
+            color: white; 
+        }
+    }
+}
+
+/* Fin Boton arriba */
+
+/* Botón contame tu idea */
+.contame{
+    border: #ead5f1 1px solid;
+    display: inline-block;
+    padding: 10px;
+    background-color: #ead5f1;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: background-color .5s;
+
+    &:hover{
+        background-color:#debaeb;
+    }
+
+    a{
+        font-weight: 600;
+        color: black;
+        transition: color .5s;
+
+        &:hover{
+            color: white; 
+        }
+    }
+}
+
+/* Fin Botón contame tu idea */
+
+/* Boton tienda */
+.tienda{
+    position: fixed;
+    bottom: 35px;
+    left: 15px;
+
+    &:hover{
+        transform: scale(1.15);
+    }
+
+    a{
+        color: black;
+        font-size: $tamanio*3;
+    }
+   
+}
+
+/* Fin Boton tienda */

@@ -4,43 +4,69 @@
   background-color: #ead5f1;
 }
 
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
-/* Root */
-:root {
-  font-size: 1rem;
-}
-
-/* Fin Root */
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-h1 {
+/* Boton arriba */
+.arriba {
+  border: solid 1px #debaeb;
+  width: fit-content;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
   background-color: #ead5f1;
-  text-align: center;
-  font-size: 3.125rem;
-  font-weight: bold;
-  width: 100%;
+  transition: background-color 0.5s;
+}
+.arriba:hover {
+  background-color: #debaeb;
+}
+.arriba a {
+  font-weight: 600;
+  color: black;
+  transition: color 0.5s;
+}
+.arriba a:hover {
+  color: white;
 }
 
-a {
-  text-decoration: none;
+/* Fin Boton arriba */
+/* Botón contame tu idea */
+.contame {
+  border: #ead5f1 1px solid;
+  display: inline-block;
+  padding: 10px;
+  background-color: #ead5f1;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: background-color 0.5s;
+}
+.contame:hover {
+  background-color: #debaeb;
+}
+.contame a {
+  font-weight: 600;
+  color: black;
+  transition: color 0.5s;
+}
+.contame a:hover {
+  color: white;
 }
 
-h2 {
-  color: #debaeb;
-  font-size: 2.375rem;
-  font-weight: bold;
-  text-align: center;
+/* Fin Botón contame tu idea */
+/* Boton tienda */
+.tienda {
+  position: fixed;
+  bottom: 35px;
+  left: 15px;
+}
+.tienda:hover {
+  transform: scale(1.15);
+}
+.tienda a {
+  color: black;
+  font-size: 3rem;
 }
 
+/* Fin Boton tienda */
 /* Pie de página */
 .footer-container {
   background-color: rgba(222, 186, 235, 0.5647058824);
@@ -134,6 +160,43 @@ h2 {
 }
 
 /* Fin Barra de navegacion */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Root */
+:root {
+  font-size: 1rem;
+}
+
+/* Fin Root */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  background-color: #ead5f1;
+  text-align: center;
+  font-size: 3.125rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  color: #debaeb;
+  font-size: 2.375rem;
+  font-weight: bold;
+  text-align: center;
+}
+
 /* Presentacion */
 .presentacion {
   display: flex;
@@ -193,30 +256,6 @@ h2 {
 }
 
 /* Fin Banner mis trabajos */
-/* Boton arriba */
-.arriba {
-  border: solid 1px #debaeb;
-  width: fit-content;
-  border-radius: 10px;
-  margin-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  background-color: #ead5f1;
-  transition: background-color 0.5s;
-}
-.arriba:hover {
-  background-color: #debaeb;
-}
-.arriba a {
-  font-weight: 600;
-  color: black;
-  transition: color 0.5s;
-}
-.arriba a:hover {
-  color: white;
-}
-
-/* Fin Boton arriba */
 /* Seguinos en nuestras redes */
 .redes {
   text-align: center;
@@ -232,45 +271,6 @@ h2 {
 }
 
 /* Fin seguinos en nuestras redes */
-/* Botón contame tu idea */
-.contame {
-  border: #ead5f1 1px solid;
-  display: inline-block;
-  padding: 10px;
-  background-color: #ead5f1;
-  border-radius: 10px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  transition: background-color 0.5s;
-}
-.contame:hover {
-  background-color: #debaeb;
-}
-.contame a {
-  font-weight: 600;
-  color: black;
-  transition: color 0.5s;
-}
-.contame a:hover {
-  color: white;
-}
-
-/* Fin Botón contame tu idea */
-/* Boton tienda */
-.tienda {
-  position: fixed;
-  bottom: 35px;
-  left: 15px;
-}
-.tienda:hover {
-  transform: scale(1.15);
-}
-.tienda a {
-  color: black;
-  font-size: 3rem;
-}
-
-/* Fin Boton tienda */
 /* Servicios */
 .servicios {
   text-align: center;

@@ -1,0 +1,39 @@
+/* Pie de página */
+.footer-container{
+    background-color: #debaeb90;
+    color: grey;
+    display: flex;
+    align-items: center;   
+    font-size: $tamanio;
+    justify-content: space-between;
+    @include tamanio ($ancho,55px);
+
+    .suscribirse{
+    width: 55%;
+    display: flex;
+    margin-left: 16px;
+    position: relative;
+    top: 2px;
+
+    input{
+        font-size: small;
+        position: relative;
+        bottom: 1px;
+        &:focus{
+            background-color: whitesmoke;
+        }
+    }
+    }
+
+.desarrollado{
+    font-size: $tamanio;
+    width: 30%;
+    display: flex;
+    justify-content:space-around;
+    position: relative;
+    top: 10px;
+}    
+       
+}
+
+/* Fin Pie de página */
