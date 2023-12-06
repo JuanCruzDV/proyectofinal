@@ -4,43 +4,69 @@
   background-color: #ead5f1;
 }
 
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
-/* Root */
-:root {
-  font-size: 1rem;
-}
-
-/* Fin Root */
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-h1 {
+/* Boton arriba */
+.arriba {
+  border: solid 1px #debaeb;
+  width: fit-content;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
   background-color: #ead5f1;
-  text-align: center;
-  font-size: 3.125rem;
-  font-weight: bold;
-  width: 100%;
+  transition: background-color 0.5s;
+}
+.arriba:hover {
+  background-color: #debaeb;
+}
+.arriba a {
+  font-weight: 600;
+  color: black;
+  transition: color 0.5s;
+}
+.arriba a:hover {
+  color: white;
 }
 
-a {
-  text-decoration: none;
+/* Fin Boton arriba */
+/* Botón contame tu idea */
+.contame {
+  border: #ead5f1 1px solid;
+  display: inline-block;
+  padding: 10px;
+  background-color: #ead5f1;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: background-color 0.5s;
+}
+.contame:hover {
+  background-color: #debaeb;
+}
+.contame a {
+  font-weight: 600;
+  color: black;
+  transition: color 0.5s;
+}
+.contame a:hover {
+  color: white;
 }
 
-h2 {
-  color: #debaeb;
-  font-size: 2.375rem;
-  font-weight: bold;
-  text-align: center;
+/* Fin Botón contame tu idea */
+/* Boton tienda */
+.tienda {
+  position: fixed;
+  bottom: 35px;
+  left: 15px;
+}
+.tienda:hover {
+  transform: scale(1.15);
+}
+.tienda a {
+  color: black;
+  font-size: 3rem;
 }
 
+/* Fin Boton tienda */
 /* Pie de página */
 .footer-container {
   background-color: rgba(222, 186, 235, 0.5647058824);
@@ -134,6 +160,43 @@ h2 {
 }
 
 /* Fin Barra de navegacion */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Root */
+:root {
+  font-size: 1rem;
+}
+
+/* Fin Root */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  background-color: #ead5f1;
+  text-align: center;
+  font-size: 3.125rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  color: #debaeb;
+  font-size: 2.375rem;
+  font-weight: bold;
+  text-align: center;
+}
+
 /* Presentacion */
 .presentacion {
   display: flex;
@@ -193,30 +256,6 @@ h2 {
 }
 
 /* Fin Banner mis trabajos */
-/* Boton arriba */
-.arriba {
-  border: solid 1px #debaeb;
-  width: fit-content;
-  border-radius: 10px;
-  margin-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  background-color: #ead5f1;
-  transition: background-color 0.5s;
-}
-.arriba:hover {
-  background-color: #debaeb;
-}
-.arriba a {
-  font-weight: 600;
-  color: black;
-  transition: color 0.5s;
-}
-.arriba a:hover {
-  color: white;
-}
-
-/* Fin Boton arriba */
 /* Seguinos en nuestras redes */
 .redes {
   text-align: center;
@@ -232,45 +271,6 @@ h2 {
 }
 
 /* Fin seguinos en nuestras redes */
-/* Botón contame tu idea */
-.contame {
-  border: #ead5f1 1px solid;
-  display: inline-block;
-  padding: 10px;
-  background-color: #ead5f1;
-  border-radius: 10px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  transition: background-color 0.5s;
-}
-.contame:hover {
-  background-color: #debaeb;
-}
-.contame a {
-  font-weight: 600;
-  color: black;
-  transition: color 0.5s;
-}
-.contame a:hover {
-  color: white;
-}
-
-/* Fin Botón contame tu idea */
-/* Boton tienda */
-.tienda {
-  position: fixed;
-  bottom: 35px;
-  left: 15px;
-}
-.tienda:hover {
-  transform: scale(1.15);
-}
-.tienda a {
-  color: black;
-  font-size: 3rem;
-}
-
-/* Fin Boton tienda */
 /* Servicios */
 .servicios {
   text-align: center;
@@ -540,6 +540,47 @@ h2 {
 }
 
 /* Fin Página Galeria */
+/* Página Error */
+.mensaje-error {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 35vh;
+}
+.mensaje-error i {
+  font-size: 16rem;
+  color: rgba(255, 0, 0, 0.679);
+}
+.mensaje-error p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.mensaje-error button {
+  border: solid 1px #debaeb;
+  width: fit-content;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #ead5f1;
+  transition: background-color 0.5s;
+}
+.mensaje-error button:hover {
+  background-color: #debaeb;
+}
+.mensaje-error button a {
+  font-weight: 600;
+  color: black;
+  transition: color 0.5s;
+}
+.mensaje-error button a:hover {
+  color: white;
+}
+
+/* Fin Página Error */
 /* Media queries Notebook */
 @media (max-width: 1500px) {
   .tips-container {
@@ -575,7 +616,7 @@ h2 {
   .navegacion #check-menu:checked ~ .navegacion-nav {
     background-color: rgba(255, 255, 255, 0.95);
     width: 30%;
-    height: 30vh;
+    height: 35vh;
     position: absolute;
     right: 0;
     top: 60px;
@@ -637,12 +678,15 @@ h2 {
     grid-template-columns: repeat(3, 250px);
   }
   .contacto {
-    width: 100%;
+    width: 800px;
   }
   .mapa iframe {
-    width: 100%;
+    width: 790px;
     position: relative;
-    left: 240px;
+    left: 250px;
+  }
+  body {
+    overflow-x: hidden;
   }
 }
 /* Media queries Smartphones */
@@ -655,16 +699,16 @@ h2 {
   .tips-container .tip1,
   .tips-container .tip2,
   .tips-container .tip3 {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     margin: 20px 0 20px 0;
   }
   .tips-container .tip1 {
     position: relative;
-    top: 35px;
+    top: 65px;
   }
   .tips-container .tip3 {
     position: relative;
-    top: -180px;
+    top: -120px;
   }
   .tips-container .imgtip1,
   .tips-container .imgtip2,
@@ -676,19 +720,25 @@ h2 {
     margin-top: 90px;
     position: relative;
     top: 15px;
+    left: 30px;
+  }
+  .tips-container .imgtip1 img {
+    width: 400px;
+    position: relative;
+    right: 30px;
   }
   .tips-container .imgtip2 {
     margin-bottom: 350px;
-    width: 550px;
     position: relative;
-    right: 70px;
+    width: 445px;
+    right: 33px;
   }
   .tips-container .imgtip2 img {
     position: relative;
     top: 10px;
     height: 310px;
-    width: 100%;
     padding-top: 50px;
+    width: 400px;
   }
   .tips-container .imgtip2 p {
     font-size: 2rem;
@@ -696,8 +746,8 @@ h2 {
   }
   .tips-container .imgtip3 img {
     position: relative;
-    left: 16px;
     top: -50px;
+    width: 400px;
   }
   .footer-container .suscribirse {
     display: none;
@@ -738,7 +788,10 @@ h2 {
     left: 145px;
   }
   h1 {
-    font-size: 2.7rem;
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
   }
   .galeria-container .galeria1,
   .galeria-container .galeria2,
@@ -769,6 +822,18 @@ h2 {
   }
   .botones {
     font-size: 0.65rem;
+  }
+  .mapa iframe {
+    width: 420px;
+    height: 300px;
+    position: relative;
+    left: 247px;
+  }
+  .contacto {
+    width: 400px;
+  }
+  body {
+    overflow-x: hidden;
   }
 }
 

@@ -1,0 +1,60 @@
+/* Barra de navegacion */
+.header{
+    position: sticky;
+    z-index: 10;
+    top: 0;
+
+    nav.navegacion{
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+        @include tamanio ($ancho,90px);
+    }
+    .logo-container{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        @include tamanio (12%,90px);
+    }
+    .navegacion-nav{
+        display: flex;
+        width: 30%;
+        list-style: none;
+        align-items: center;
+        justify-content:space-around;
+
+        .nav-item{
+            padding: 10px;
+            position: relative;
+            font-size: $tamanio*1.2;
+            top: 10px;
+            right: 10px;
+            
+            &:hover{
+                border-bottom: 1px solid #debaeb;
+            }
+
+            a{
+             color: #debaeb;
+            }
+        }
+    }
+}
+
+/* Menu mobile */
+
+#check-menu, .navegacion label{
+    display: none;    
+} 
+
+.navegacion label i{
+    font-size: $tamanio*1.8;
+    color: #debaeb;
+}
+
+/* Fin Barra de navegacion */
