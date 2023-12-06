@@ -321,10 +321,10 @@
     }
 
     .mapa iframe{
-        width: 420px;
+        width: 500px;
         height: 300px;
         position: relative;
-        left: 247px;
+        left: 273px;
         
 
     }
@@ -339,3 +339,13 @@
 
 
 }
+
+@media (max-width:480px){
+    .mapa iframe{
+        width: 430px;
+        left: 265px;
+    }
+}
+
+
+
